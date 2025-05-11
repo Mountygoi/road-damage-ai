@@ -1,76 +1,67 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI для Обнаружения Поврежденных Дорог</title>
+  <title>AI for Detecting Damaged Roads</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>AI-система для обнаружения поврежденных дорог</h1>
-    <p>Финальный проект по курсу Искусственный Интеллект</p>
+    <h1>AI System for Detecting Damaged Roads</h1>
+    <p>Final Project for the Artificial Intelligence Course</p>
   </header>
 
   <section id="about">
-    <h2>О проекте</h2>
-    <p>Мы разработали систему компьютерного зрения, которая автоматически определяет, находится ли дорога в хорошем состоянии или нуждается в ремонте. Это решение может быть интегрировано в камеры умного города для быстрого обнаружения повреждений и оперативного реагирования.</p>
+    <h2>About the Project</h2>
+    <p>We developed a computer vision system that automatically determines whether a road is in good condition or needs repairs. This solution can be integrated into smart city cameras for quick detection of road damages and prompt response.</p>
   </section>
 
-  <h2>Видео-демонстрация</h2>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; max-width: 100%;">
-  <iframe 
-    src="https://www.youtube.com/embed/A9nDnWAbZTE" 
-    title="Demo Video" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  </iframe>
-</div>
-
-
-
-
-
- <section id="dataset">
-  <h2>Датасет</h2>
-  <p>Мы использовали смесь собственных изображений и открытых источников, вручную разметили изображения на две категории: <strong>хорошая дорога</strong> и <strong>поврежденная дорога</strong>. После этого обучили сверточную нейросеть (CNN). Ниже — пример входных изображений:</p>
-  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
-    <img src="dataset_photo.JPG" alt="Dataset Example 1" style="width: 30%; max-width: 300px;">
-    <img src="dataset_photo1.JPG" alt="Dataset Example 2" style="width: 30%; max-width: 300px;">
+  <h2>Video Demonstration</h2>
+  <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; max-width: 100%;">
+    <iframe 
+      src="https://www.youtube.com/embed/A9nDnWAbZTE" 
+      title="Demo Video" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen 
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    </iframe>
   </div>
-</section>
 
+  <section id="dataset">
+    <h2>Dataset</h2>
+    <p>We used a mixture of our own images and open-source data, manually annotating the images into two categories: <strong>good road</strong> and <strong>damaged road</strong>. After that, we trained a convolutional neural network (CNN). Below are example input images:</p>
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
+      <img src="dataset_photo.JPG" alt="Dataset Example 1" style="width: 30%; max-width: 300px;">
+      <img src="dataset_photo1.JPG" alt="Dataset Example 2" style="width: 30%; max-width: 300px;">
+    </div>
+  </section>
 
-<section id="results">
-  <h2>Результаты</h2>
-  <p>Модель была обучена в течение 10 эпох. Финальные метрики:</p>
-  <ul>
-    <li><strong>Точность на обучающем наборе:</strong> 100%</li>
-    <li><strong>Точность на валидационном наборе:</strong> 100%</li>
-    <li><strong>Финальный loss:</strong> 0.0038 (train), 0.0133 (val)</li>
-  </ul>
-  <p>Пример визуализации результата:</p>
-  <div style="display: flex; justify-content: center; margin-top: 15px;">
-    <img src="result.jpg" alt="Результат модели" style="width:100%; max-width:800px;">
-  </div>
-</section>
+  <section id="results">
+    <h2>Results</h2>
+    <p>The model was trained for 10 epochs. Final metrics:</p>
+    <ul>
+      <li><strong>Training accuracy:</strong> 100%</li>
+      <li><strong>Validation accuracy:</strong> 100%</li>
+      <li><strong>Final loss:</strong> 0.0038 (train), 0.0133 (val)</li>
+    </ul>
+    <p>Example of the result visualization:</p>
+    <div style="display: flex; justify-content: center; margin-top: 15px;">
+      <img src="result.jpg" alt="Model Result" style="width:100%; max-width:800px;">
+    </div>
+  </section>
 
-
-
-<section id="poster">
-  <h2>Постер</h2>
-  <div style="text-align: center;">
-    <a href="poster.png" target="_blank">
-      <img src="poster.png" alt="Poster" style="width: 600px; max-width: 100%; height: auto; border: 1px solid #ccc;">
-    </a>
-  </div>
-</section>
-
-
+  <section id="poster">
+    <h2>Poster</h2>
+    <div style="text-align: center;">
+      <a href="poster.png" target="_blank">
+        <img src="poster.png" alt="Poster" style="width: 600px; max-width: 100%; height: auto; border: 1px solid #ccc;">
+      </a>
+    </div>
+  </section>
 
   <footer>
-    <p>Разработали: Amantay Ayan and Mussakhanuly Olzhas • INF375 • 2025</p>
+    <p>Developed by: Amantay Ayan and Mussakhanuly Olzhas • INF375 • 2025</p>
   </footer>
 </body>
 </html>
