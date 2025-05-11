@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI для обнаружения повреждений дорог</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>AI для Обнаружения Поврежденных Дорог</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>AI-система для обнаружения повреждений дорог</h1>
-    <p>Финальный проект по курсу INF375, май 2025</p>
+    <h1>AI-система для обнаружения поврежденных дорог</h1>
+    <p>Финальный проект по курсу Искусственный Интеллект</p>
   </header>
+
+  <section id="about">
+    <h2>О проекте</h2>
+    <p>Мы разработали систему компьютерного зрения, которая автоматически определяет, находится ли дорога в хорошем состоянии или нуждается в ремонте. Это решение может быть интегрировано в камеры умного города для быстрого обнаружения повреждений и оперативного реагирования.</p>
+  </section>
+
+  <section id="demo">
+    <h2>Видеодемонстрация</h2>
+    <video controls width="100%">
+      <source src="assets/demo.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </section>
 
   <section id="dataset">
     <h2>Датасет</h2>
-    <p>Мы использовали смесь собственных изображений и открытых источников, вручную разметили данные на две категории: <strong>хорошая дорога</strong> и <strong>повреждённая дорога</strong>. Всего в датасете стало 1000 изображений (500+500). Ниже — пример входного изображения:</p>
-    <img src="assets/sample1.jpg" alt="Sample Road Image" width="400" />
+    <p>Мы использовали смесь собственных изображений и открытых источников, вручную разметили изображения на две категории: <strong>хорошая дорога</strong> и <strong>поврежденная дорога</strong>. После этого обучили сверточную нейросеть (CNN). Ниже — пример входных изображений:</p>
+    <img src="assets/sample1.jpg" alt="Sample Road Image" width="100%">
   </section>
 
   <section id="results">
-    <h2>Результаты обучения</h2>
-    <p>Модель обучалась 10 эпох на выборках train/val с соотношением 80/20. Логи обучения:</p>
-    <pre>
-Epoch 1: accuracy=0.5332, loss=1.8718, val_accuracy=0.5000, val_loss=4.8762
-Epoch 2: accuracy=0.5123, loss=3.6046, val_accuracy=0.5000, val_loss=0.6186
-Epoch 3: accuracy=0.5579, loss=0.5151, val_accuracy=0.6667, val_loss=0.4929
-Epoch 4: accuracy=1.0000, loss=0.3463, val_accuracy=1.0000, val_loss=0.4046
-Epoch 5: accuracy=1.0000, loss=0.2581, val_accuracy=1.0000, val_loss=0.3492
-Epoch 6: accuracy=1.0000, loss=0.1535, val_accuracy=1.0000, val_loss=0.2444
-Epoch 7: accuracy=1.0000, loss=0.0723, val_accuracy=1.0000, val_loss=0.1348
-Epoch 8: accuracy=1.0000, loss=0.0337, val_accuracy=1.0000, val_loss=0.0733
-Epoch 9: accuracy=1.0000, loss=0.0131, val_accuracy=1.0000, val_loss=0.0425
-Epoch 10: accuracy=1.0000, loss=0.0038, val_accuracy=1.0000, val_loss=0.0133
-    </pre>
-    <p>Финальная точность модели на train/val: <strong>100%</strong>/<strong>100%</strong>. Ниже — график динамики точности:</p>
-    <img src="assets/model_performance.png" alt="Model Performance" width="400" />
+    <h2>Результаты</h2>
+    <p>Модель была обучена в течение 10 эпох. Финальные метрики:</p>
+    <ul>
+      <li><strong>Точность на обучающем наборе:</strong> 100%</li>
+      <li><strong>Точность на валидационном наборе:</strong> 100%</li>
+      <li><strong>Финальный loss:</strong> 0.0038 (train), 0.0133 (val)</li>
+    </ul>
+    <p>Ниже — график точности по эпохам:</p>
+    <img src="assets/chart.png" alt="Model Performance" width="100%">
   </section>
 
   <section id="poster">
     <h2>Постер</h2>
-    <p>Постер проекта:</p>
-    <a href="assets/poster.png" target="_blank">
-      <img src="assets/poster.png" alt="Poster" width="400" />
-    </a>
+    <img src="assets/poster.jpg" alt="Poster" width="100%">
   </section>
 
   <footer>
-    <p><strong>Разработали:</strong> [Ваше имя] и [Имя партнёра] • INF375 • 2025</p>
+    <p>Разработали: Айдынбек Мусабек и Олжас Мусаханулы • INF375 • 2025</p>
   </footer>
 </body>
 </html>
