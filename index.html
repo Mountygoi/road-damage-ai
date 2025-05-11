@@ -17,15 +17,17 @@
   </section>
 
   <h2>Видео-демонстрация</h2>
-<div style="text-align: center; width: 100%;">
-  <iframe width="100%" height="500"
-    src="https://www.youtube.com/embed/A9nDnWAbZTE"
-    title="Demo Video"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; max-width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed/A9nDnWAbZTE" 
+    title="Demo Video" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
   </iframe>
 </div>
+
 
 
 
@@ -40,7 +42,7 @@
 </section>
 
 
- <section id="results">
+<section id="results">
   <h2>Результаты</h2>
   <p>Модель была обучена в течение 10 эпох. Финальные метрики:</p>
   <ul>
@@ -49,13 +51,15 @@
     <li><strong>Финальный loss:</strong> 0.0038 (train), 0.0133 (val)</li>
   </ul>
   <p>Пример визуализации результата:</p>
-  <img src="result.jpg" alt="Результат модели" style="width:100%; max-width:800px; margin-top: 15px;">
+  <div style="display: flex; justify-content: center; margin-top: 15px;">
+    <img src="result.jpg" alt="Результат модели" style="width:100%; max-width:800px;">
+  </div>
 </section>
+
 
 
 <section id="poster">
   <h2>Постер</h2>
-  <p style="text-align: center;">Скачать/посмотреть постер можно ниже:</p>
   <div style="text-align: center;">
     <a href="poster.png" target="_blank">
       <img src="poster.png" alt="Poster" style="width: 600px; max-width: 100%; height: auto; border: 1px solid #ccc;">
